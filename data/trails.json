@@ -1,0 +1,29 @@
+{
+  "trails":[
+     {
+        "id":7011192,
+        "name":"Boulder Skyline Traverse",
+        "type":"Hike",
+        "summary":"The classic long mountain route in Boulder.",
+        "difficulty":"black",
+        "stars":4.7,
+        "starVotes":78,
+        "location":"Superior, Colorado",
+        "url":"https://www.hikingproject.com/trail/7011192/boulder-skyline-traverse",
+        "imgSqSmall":"https://cdn-files.apstatic.com/hike/7048859_sqsmall_1555540136.jpg",
+        "imgSmall":"https://cdn-files.apstatic.com/hike/7048859_small_1555540136.jpg",
+        "imgSmallMed":"https://cdn-files.apstatic.com/hike/7048859_smallMed_1555540136.jpg",
+        "imgMedium":"https://cdn-files.apstatic.com/hike/7048859_medium_1555540136.jpg",
+        "length":16.3,
+        "ascent":5409,
+        "descent":-5492,
+        "high":8492,
+        "low":5417,
+        "longitude":-105.2582,
+        "latitude":39.9388,
+        "conditionStatus":"Minor Issues",
+        "conditionDetails":"Muddy, Snowy, Icy",
+        "conditionDate":"2020-04-16 20:56:03"
+     }
+  ]
+}
