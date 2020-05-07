@@ -1,7 +1,9 @@
 // IMPORT MODULES under test here:
-const { mungeLocation, mungeWeather } = require('../utils.js');
+const { mungeLocation, mungeWeather, transformedTrail } = require('../utils.js');
 const locationData = require('../data/geo.json');
 const weatherData = require('../data/weather.json');
+const trailData = require('../data/trails.json');
+
 
 const test = QUnit.test;
 
@@ -91,6 +93,48 @@ test('should return an empty object when passed invalid input', function(assert)
     //Act 
     // Call the function you're testing and set the result to a const
     const results = mungeWeather(null);
+    
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.deepEqual(results, expected);
+});
+
+test('should return data for hiking trails', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    
+    const expected = [
+        {
+            name: 'Boulder Skyline Traverse',
+            location: 'Superior, Colorado',
+            length: 16.3,
+            stars: 4.7,
+            star_votes: 78,
+            summary: 'The classic long mountain route in Boulder.',
+            trail_url: 'https://www.hikingproject.com/trail/7011192/boulder-skyline-traverse',
+            conditions: 'Minor Issues',
+            condition_date: '2020-04-16 20:56:03',
+            
+        },
+    ];
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const results = transformedTrail(trailData);
+    
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.deepEqual(results, expected);
+});
+
+
+test('should return an empty object when passed invalid input', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const expected = {};
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const results = transformedTrail(null);
     
     //Assert
     // Make assertions about what is expected valid result
