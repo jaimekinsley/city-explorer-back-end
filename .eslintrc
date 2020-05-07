@@ -48,6 +48,7 @@
         "builtinGlobals": true
       }
     ],
+    "no-irregular-whitespace": ["error", "never"],
     "semi": ["error", "always"],
     "space-in-parens": ["error"],
     "space-infix-ops": "error",

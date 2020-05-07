@@ -75,10 +75,8 @@ test('should return weather data', function(assert) {
         time: '2020-05-12'
     },
 ];  
-
-
-//Act 
-    // Call the function you're testing and set the result to a const
+// Act
+// Call the function you're testing and set the result to a const
     const results = mungeWeather(weatherData);
     
     //Assert
