@@ -43,7 +43,7 @@ app.get('/weather', async(req, res) => {
     }
 });
 
-app.get('trails', async(req, res) => {
+app.get('/trails', async(req, res) => {
     try {
         const data = await request.get(`https://www.hikingproject.com/data/get-trails?lat=${req.query.longitude}&lon=${req.query.longitude}&key=${process.env.HIKING_KEY}`);
         const transformedTrailData = transformedTrail(data.body);
