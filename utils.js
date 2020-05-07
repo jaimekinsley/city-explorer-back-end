@@ -53,6 +53,7 @@ function transformedTrail(data)
         return {};
     }
 }
+
 module.exports = {
     mungeLocation, mungeWeather, transformedTrail,
 };
